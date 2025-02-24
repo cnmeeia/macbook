@@ -1,4 +1,4 @@
-name: Build macOS App
+ name: Build macOS App
 
 on:
   push:
@@ -41,7 +41,7 @@ jobs:
           ClipboardMonitor.dmg
     
     - name: Upload Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ClipboardMonitor
         path: ClipboardMonitor.dmg 
